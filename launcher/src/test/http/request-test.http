@@ -5,3 +5,7 @@ Accept: application/json
 ###
 GET http://localhost:10080/hello-world-bean
 Accept: application/json
+
+###
+GET http://localhost:10080/hello-world-bean/path-variable/1
+Accept: application/json
