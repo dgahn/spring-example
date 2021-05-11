@@ -11,4 +11,9 @@ class HelloWorldController {
         return "hello"
     }
 
+    @GetMapping("/hello-world-bean")
+    fun helloWorldBean(): HelloWorldBean {
+        return HelloWorldBean("Hello World")
+    }
+
 }
