@@ -17,7 +17,7 @@ class UserController(
     fun findAll(): List<User> = repository.findAll()
 
     @GetMapping("/users/{id}")
-    fun findById(@PathVariable id: Int) = repository.findOne(id)
+    fun findById(@PathVariable id: Int) = repository.findOne(id) ?: throw UserNotFoundException("ID[$id] not found")
 
     @PostMapping("/users")
     fun create(@RequestBody user: User): ResponseEntity<User> {
