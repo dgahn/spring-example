@@ -1,7 +1,9 @@
 package me.dgahn.user
 
+import org.springframework.stereotype.Repository
 import java.time.LocalDateTime
 
+@Repository
 class UserRepository {
     private val users: MutableList<User> = mutableListOf(
         User(1, "Kenneth", LocalDateTime.now()),

@@ -9,3 +9,19 @@ Accept: application/json
 ###
 GET http://localhost:10080/hello-world-bean/path-variable/1
 Accept: application/json
+
+###
+GET http://localhost:10080/users
+Accept: application/json
+
+###
+GET http://localhost:10080/users/1
+Accept: application/json
+
+###
+GET http://localhost:10080/users/2
+Accept: application/json
+
+###
+GET http://localhost:10080/users/4
+Accept: application/json
