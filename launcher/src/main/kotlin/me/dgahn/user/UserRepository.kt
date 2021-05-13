@@ -26,4 +26,6 @@ class UserRepository {
 
     fun findOne(id: Int) = users.find { it.id == id }
 
+    fun deleteById(id: Int) = users.removeIf { it.id == id }
+
 }

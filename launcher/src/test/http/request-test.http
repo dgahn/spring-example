@@ -1,3 +1,9 @@
+DELETE http://localhost:10080/users/1
+Accept: application/json
+
+###
+
+
 POST http://localhost:10080/users
 Content-Type: application/json
 Accept: application/json
