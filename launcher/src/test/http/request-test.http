@@ -1,3 +1,12 @@
+POST http://localhost:10080/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "newUser",
+  "joinDate": "2021-05-14T00:15:19.422209"
+}
+
 ### Hello World 메시지를 반환하는 API 테스트
 GET http://localhost:10080/hello-world
 Accept: application/json
@@ -25,3 +34,4 @@ Accept: application/json
 ###
 GET http://localhost:10080/users/4
 Accept: application/json
+

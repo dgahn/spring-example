@@ -120,8 +120,10 @@ allprojects {
         implementation(KotlinLibs.kotlinReflect)
         implementation(KotlinLibs.coroutine)
 
-        implementation(SpringLibs.bootStarterWebflux)
+//        implementation(SpringLibs.bootStarterWebflux)
+        implementation(SpringLibs.bootStarterWeb)
 //        implementation(SpringLibs.bootStarterJpa)
+        implementation(SpringLibs.webMvc)
 
         testImplementation(TestLibs.runnerJunit5)
         testImplementation(TestLibs.assertionsCore)

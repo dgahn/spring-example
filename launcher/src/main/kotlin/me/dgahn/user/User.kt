@@ -2,8 +2,15 @@ package me.dgahn.user
 
 import java.time.LocalDateTime
 
-class User(
+open class User(
     var id: Int? = null,
-    val name: String,
-    val joinDate: LocalDateTime
-)
+    var name: String,
+    var joinDate: LocalDateTime
+) {
+
+    constructor(): this(
+        name = "",
+        joinDate = LocalDateTime.now()
+    )
+
+}

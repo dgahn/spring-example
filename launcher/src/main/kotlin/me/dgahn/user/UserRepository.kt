@@ -15,12 +15,13 @@ class UserRepository {
 
     fun findAll() = users
 
-    fun save(user: User) {
+    fun save(user: User): User {
         if(user.id == null) {
             user.id = ++usersCount
         }
 
         users.add(user)
+        return user
     }
 
     fun findOne(id: Int) = users.find { it.id == id }
